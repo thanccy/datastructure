@@ -1,0 +1,25 @@
+int main() {
+    int choice, key;
+    while (1) {
+        printf("\n1. Insert\n2. Traversal\n3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                printf("Enter key: ");
+                scanf("%d", &key);
+                insert(key);
+                break;
+            case 2:
+                printf("B-Tree traversal: ");
+                traverse(root);
+                printf("\n");
+                break;
+            case 3:
+                return 0;
+            default:
+                printf("Invalid choice.\n");
+        }
+    }
+    return 0;
+}
